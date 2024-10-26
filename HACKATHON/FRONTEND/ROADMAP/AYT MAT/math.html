@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYT Matematik Roadmap</title>
+    <link rel="stylesheet" href="math.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">Logo</div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </div>
+        <div class="dropdown" id="dropdownMenu">
+            <a href="#">Ana Sayfa</a>
+            <a href="#">İletişim</a>
+        </div>
+    </nav>
+
+    <div class="roadmap">
+        <div class="subject-box" onclick="toggleTopics('temel_matematik')">Temel Matematik</div>
+        <div class="arrow">↓</div>
+        <div class="subject-box" onclick="toggleTopics('sayisal')">Sayısal Mantık</div>
+        <div class="arrow">↓</div>
+        <div class="subject-box" onclick="toggleTopics('geometri')">Geometri</div>
+        <div class="arrow">↓</div>
+        <div class="subject-box" onclick="toggleTopics('analiz')">Analiz</div>
+
+        <div class="next-topics" id="temel_matematik">
+            <div class="subject-box">Kesirler</div>
+            <div class="subject-box">Oran-Orantı</div>
+            <div class="subject-box">Çarpanlara Ayırma</div>
+            <div class="subject-box">Üslü Sayılar</div>
+        </div>
+
+        <div class="next-topics" id="sayisal">
+            <div class="subject-box">Kümeler</div>
+            <div class="subject-box">Mantık</div>
+            <div class="subject-box">Fonksiyonlar</div>
+            <div class="subject-box">Eşitsizlikler</div>
+        </div>
+
+        <div class="next-topics" id="geometri">
+            <div class="subject-box">Dik Üçgen</div>
+            <div class="subject-box">Çember ve Daire</div>
+            <div class="subject-box">Alan ve Hacim</div>
+            <div class="subject-box">Prizmalar ve Silindirler</div>
+        </div>
+
+        <div class="next-topics" id="analiz">
+            <div class="subject-box">Limit</div>
+            <div class="subject-box">Türev</div>
+            <div class="subject-box">İntegral</div>
+            <div class="subject-box">Diferansiyel Denklemler</div>
+        </div>
+    </div>
+
+    <script src="math.js"></script>
+</body>
+</html>

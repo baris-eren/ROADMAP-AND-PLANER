@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6a0dad; /* Mor arka plan */
+    color: white; /* Beyaz metin rengi */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #4b0082; /* Koyu mor */
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+    background-color: #4b0082;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.dropdown a {
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    background-color: #7a1c9c; /* Açık mor hover efekti */
+}
+
+.roadmap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+.subject-box {
+    background-color: #8a2be2; /* Mor kutucuk rengi */
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.arrow {
+    font-size: 30px;
+    margin: 10px;
+}
+
+.next-topics {
+    display: none; /* İlk başta gizli */
+}
