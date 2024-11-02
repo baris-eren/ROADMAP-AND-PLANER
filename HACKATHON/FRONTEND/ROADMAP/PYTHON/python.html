@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYT Matematik Roadmap</title>
+    <link rel="stylesheet" href="python.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="file:///C:/Users/baris/ROADMAP-AND-PLANER/HACKATHON/FRONTEND/HOME/index.html">
+                    <img src="https://fundamig.org.br/wp-content/uploads/2023/11/Logo_Filiadas_2021_FDC_CMYK.png" alt="logo" class="logo-img">
+                </a>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </div>
+        <div class="dropdown" id="dropdownMenu">
+            <a href="file:///C:/Users/baris/ROADMAP-AND-PLANER/HACKATHON/FRONTEND/HOME/index.html">Ana Sayfa</a>
+            <a href="#">İletişim</a>
+        </div>
+    </nav>
+
+    <div class="roadmap">
+        <div class="subject-box" onclick="toggleTopics('temel')">Temel Python Yapıları</div>
+        <div class="arrow">➪</div>
+        
+        <div class="subject-box" onclick="toggleTopics('kontrol')">Kontrol Yapıları</div>
+        <div class="arrow">➪</div>
+        
+        <div class="subject-box" onclick="toggleTopics('veri')">Veri Yapıları</div>
+        <div class="arrow">➪</div>
+        
+        <div class="subject-box" onclick="toggleTopics('fonksiyonlar')">Fonksiyonlar</div>
+        <div class="arrow">➪</div>
+        
+        <div class="subject-box" onclick="toggleTopics('Kütüphaneler')">Modüller ve Kütüphaneler</div>
+        <div class="arrow1">⮷</div>
+        
+        <div class="subject-box" onclick="toggleTopics('proje')">Proje ve Uygulamalar</div>
+        <div class="arrow">🢤</div>
+        
+        <div class="subject-box" onclick="toggleTopics('gelismis')">Gelişmiş Konular</div>
+        <div class="arrow">🢤</div>
+        
+        <div class="subject-box" onclick="toggleTopics('oop')">Nesne Yönelimli Programlama (OOP)</div>
+        <div class="arrow">🢤</div>
+
+        <div class="subject-box" onclick="toggleTopics('dosya')">Dosya İşlemleri</div>
+        <div class="arrow">🢤</div>
+        
+        <div class="subject-box" onclick="toggleTopics('hata')">Hata Yönetimi (Error Handling)</div>
+
+        <div class="next-topics" id="temel">
+            <div class="next-topics-left">
+                <h1>BU KONUNUN ALT BAŞLIKLARI</h1>
+                <div class="subject-box-left">Değişkenler Ve Tanımları (int,float; Tip Dönüşümleri)</div>
+                <div class="subject-box-right">Operatörler (<,>,and,or,+,-)</div>
+                <div class="subject-box-left">String Manipülasyonları (upper(), lower(), f-strings, .format())</div>
+            </div>
+            <div class="line-separator"></div>
+            <div class="next-topics-right">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/1*pDPrD1nlMP28Z1EDz5GRpg.png" height="400px" width="100%">
+            </div>
+        </div>
+
+        <div class="next-topics" id="kontrol">
+            <div class="next-topics-left">
+                <h1>BU KONUNUN ALT BAŞLIKLARI</h1>
+                <div class="subject-box-left">Koşul İfadeleri (if, else)</div>
+                <div class="subject-box-right">Döngüler (for, while)</div>
+                <div class="subject-box-left">Break ve Continue</div>
+            </div>
+            <div class="line-separator"></div>
+            <div class="next-topics-right">
+                <img src="https://duygubulut.wordpress.com/wp-content/uploads/2019/06/python5.png?w=676" height="400px" width="100%">
+            </div>
+        </div>
+
+        <div class="next-topics" id="veri">
+            <div class="next-topics-left">
+                <h1>BU KONUNUN ALT BAŞLIKLARI</h1>
+                <div class="subject-box-left">Listeler Ve Metodları (append(), remove())</div>
+                <div class="subject-box-right">Tuples (Demetler)</div>
+                <div class="subject-box-left">SDictionarie (sözlükler) Ve Metodlaru (keys(), values())</div>
+                <div class="subject-box-left">Kümeler (Sets) Ve Metodları (union(), intersection())</div>
+            </div>
+            <div class="line-separator"></div> 
+            <div class="next-topics-right">
+                <img src="https://miro.medium.com/v2/resize:fit:3774/1*noA7ouMzet88EGi9-xJvAw.png" height="400px" width="100%">
+            </div>
+        </div>
+
+        <div class="next-topics" id="fonksiyonlar">
+            <div class="next-topics-left">
+                <h1>BU KONUNUN ALT BAŞLIKLARI</h1>
+                <div class="subject-box-left">Fonksiyon Tanımlama (def, return)</div>
+                <div class="subject-box-right">Fonksiyon Metodları (*args , **kwargs)</div>
+                <div class="subject-box-left">Lambda Fonksiyonları</div>
+            </div>
+            <div class="line-separator"></div>
+            <div class="next-topics-right">
+                <img src="https://miro.medium.com/v2/resize:fit:960/1*HcBp8bxdHrvM_hN9EhDi3w.png" height="400px" width="100%">
+            </div>
+        </div>
+
+        <div class="next-topics" id="Kütüphaneler">
+            <div class="next-topics-left">
+                <h1>BU KONUNUN ALT BAŞLIKLARI</h1>
+                <div class="subject-box-left">Modüllerin İmport Edilmesi (import , from ... import)</div>
+                <div class="subject-box-right">Popüler Kütüphaneler (NumPy, Pandas)</div>
+            </div>
+            <div class="line-separator"></div>
+            <div class="next-topics-right">
+                <img src="https://www.pickl.ai/blog/wp-content/uploads/2023/07/image1-2.png" height="400px" width="100%">
+            </div>
+        </div>
+
+        <div class="next-topics" id="hata">
+            <div class="next-topics-left">
+                <h1>BU KONUNUN ALT BAŞLIKLARI</h1>
+                <div class="subject-box-left">Try-Except Yapısı</div>
+                <div class="subject-box-right">Finally Blokları</div>
+            </div>  
+            <div class="line-separator"></div>
+            <div class="next-topics-right">
+                <img src="https://sourcery.ai/static/029c35ceeb9302905bcf14463d083c23/a02b1/version_C_try_except_small.jpg" height="400px" width="100%">
+            </div>
+        </div>
+
+        <div class="next-topics" id="dosya">
+            <div class="next-topics-left">
+                <h1>BU KONUNUN ALT BAŞLIKLARI</h1>
+                <div class="subject-box-left">Dosya Açma ve Kapama (open(), close())</div>
+                <div class="subject-box-right">Dosya Okuma ve Yazma (read(), readline())</div>
+                <div class="subject-box-left">With Blokları ile Dosya İşlemleri (with open())</div>
+            </div>
+            <div class="line-separator"></div>
+            <div class="next-topics-right">
+                <img src="https://miro.medium.com/v2/resize:fit:972/1*T9m1goQId9yRGFxq4epIrg.png" height="400px" width="100%">
+            </div>
+        </div>
+
+        <div class="next-topics" id="oop">
+            <div class="next-topics-left">
+                <h1>BU KONUNUN ALT BAŞLIKLARI</h1>
+                <div class="subject-box-left">Sınıflar ve Nesneler</div>
+                <div class="subject-box-right">Özellikler ve Metodlar (__init__)</div>
+                <div class="subject-box-left">Miras Alma (Inheritance)</div>
+            </div>
+            <div class="line-separator"></div>
+            <div class="next-topics-right">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/1*9t7pbZoGPgYnsiP6_lmwgw.png" height="400px" width="100%">
+            </div>
+        </div>
+
+        <div class="next-topics" id="gelismis">
+            <div class="next-topics-left">
+                <h1>BU KONUNUN ALT BAŞLIKLARI</h1>
+                <div class="subject-box-left">Liste Kavramaları (List Comprehensions)</div>
+                <div class="subject-box-right">Decorator’lar  (@decorator)</div>
+                <div class="subject-box-left">Generator’lar (yield)</div>
+            </div>
+            <div class="line-separator"></div>
+            <div class="next-topics-right">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/1*yNlNOcmluWR4cKTK-v17kw.png" height="400px" width="100%">
+            </div>
+        </div>
+
+        <div class="next-topics" id="proje">
+            <div class="next-topics-left">
+                <h1>PYTHON İLE YAPABİLECEĞİN PROJE TÜRLERİ</h1>
+                <div class="subject-box-left">Veri Analizi ve Görselleştirme Projeleri</div>
+                <div class="subject-box-right">Makine Öğrenimi ve Yapay Zeka Projeleri</div>
+                <div class="subject-box-left">Web Geliştirme Projeleri</div>
+                <div class="subject-box-left">Oyun Geliştirme Projeleri</div>
+                <div class="subject-box-left">Otomasyon Projeleri</div>
+                <div class="subject-box-left">Masaüstü Uygulamaları</div>
+                <div class="subject-box-left">Chatbot Projeleri</div>
+                <div class="subject-box-left">Finans ve Ticaret Projeleri</div>
+                <div class="subject-box-left">Bilimsel Hesaplama ve Araştırma Projeleri</div>
+                <div class="subject-box-left">Siber Güvenlik Projeleri</div>
+                <div class="subject-box-left">Eğitim Projeleri</div>
+            </div>
+            <div class="line-separator"></div>
+            <div class="next-topics-right">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" height="500px" width="70%">
+            </div>
+        </div>
+    </div>
+
+    <script src="python.js"></script>
+</body>
+</html>

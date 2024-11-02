@@ -4,6 +4,12 @@ body {
     background-color: #f4f4f9;
     color: #333;
     overflow: hidden;
+    
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
 }
 
 .logo-img {
@@ -64,7 +70,7 @@ body {
     padding-bottom: 1px;
     text-align: center;
     color: white;
-    background-color: purple;
+    background-color: #6a0dad;
     width: 350px;
     height: 95px;
     border-radius: 15px;
@@ -96,13 +102,14 @@ body {
     background-color: #ffffff;
     border: 2px solid #6a0dad;
     padding: 20px;
-    margin: 10px; /* Boşluk bırakmak için */
+    margin: 10px; 
     border-radius: 10px;
     text-align: center; 
-    text
-    font-size: 16px;
-    width: 230px; /* Kutucuk genişliği */
+    font-size: 24px;
+    width: 230px; 
     height: 75px;
+    
+    
 }
 
 .right-section {
@@ -112,8 +119,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-direction: column; /* Elemanları dikey sıralamak için */
-    align-items: center; /* Yatay ortalama */
+    flex-direction: column; 
+    
 }
 
 .create-roadmap {
@@ -131,13 +138,45 @@ body {
     padding-top: 1px;
     padding-bottom: 1px;
     text-align: center;
-    color: purple;
+    color: #6a0dad;
     background-color: white;
     width: 350px;
     height: 95px;
     border-radius: 15px;
-    margin: 0 auto;
+    margin-top: 170px;
     font-size: 24px;
+}
 
-    
+textarea {
+    resize: none;
+    height: 30px;
+    width: 350px;
+    border-radius: 8px; /* Köşeleri yumuşatır */
+    padding: 10px; /* İç boşluk ekleyerek daha estetik görünüm sağlar */
+    border: 1px solid #ccc; /* İnce bir çerçeve ekler */
+    outline: none; /* Tıklanınca etrafında mavi çerçeve oluşmasını engeller */
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+button#create-button {
+    background-color: #6a0dad; /* Arka plan rengi */
+    color: white; /* Metin rengi */
+    padding: 12px 24px; /* İç boşluk */
+    font-size: 18px; /* Yazı boyutu */
+    border: 3px solid #8a2be2; /* İnce kenarlık */
+    border-radius: 8px; /* Köşeleri yumuşat */
+    cursor: pointer; /* Tıklanabilir işaretçi */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Yumuşak geçiş */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+}
+
+button#create-button:hover {
+    background-color: #8a2be2; /* Hover arka plan rengi */
+    border-color: #6a0dad; /* Hoverda kenar rengini değiştirir */
+    transform: translateY(-2px); /* Hoverda yukarı kaldırma efekti */
+}
+
+button#create-button:active {
+    transform: translateY(1px); /* Tıklandığında hafif geri çekme efekti */
 }

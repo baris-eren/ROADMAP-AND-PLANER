@@ -1,0 +1,154 @@
+/* Genel Ayarlar */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background: linear-gradient(135deg, #4B0082 50%, #FFFFFF 50%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-img {
+    width: 120px;
+    height: 60px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #4b0082;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+    color: #fff;
+}
+
+.dropdown {
+    display: none;
+    background-color: #4b0082;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.dropdown a {
+    color: white;
+    padding: 15px 50px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    background-color: #7a1c9c;
+}
+
+/* Form Stili */
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#survey-form h2 {
+    color: #4B0082;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* Plan Seçenekleri */
+.plan-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.plan-options input[type="radio"] {
+    display: none;
+}
+
+.plan-options label {
+    padding: 8px 25px;
+    border-radius: 25px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.plan-options input[type="radio"]:checked + label {
+    background-color: #4B0082;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Grupları */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.form-group input[type="text"], .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+/* Textarea Stili */
+.form-group textarea {
+    height: 40px; /* Başlangıçta input boyutunda ayarla */
+    resize: none; /* Kullanıcının boyutlandırmasını engelle */
+}
+
+.form-group input[type="text"]:focus, .form-group textarea:focus {
+    border-color: #4B0082;
+    box-shadow: 0 0 8px rgba(75, 0, 130, 0.2);
+}
+
+/* Gönder Butonu */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #4B0082, #6A1B9A);
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: #3a006b;
+}
+
+/* Mobil Cihazlar */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    .plan-options {
+        flex-direction: column;
+    }
+}

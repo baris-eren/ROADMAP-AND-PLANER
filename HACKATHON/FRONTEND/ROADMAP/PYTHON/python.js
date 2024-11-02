@@ -12,14 +12,13 @@ function toggleTopics(konu) {
         const topics = document.querySelectorAll('.next-topics');
         topics.forEach(topic => topic.style.display = 'none');
         lastClicked = null; 
-        
     } else {
         const topics = document.querySelectorAll('.next-topics');
         topics.forEach(topic => topic.style.display = 'none');
         
         if (selectedTopic) {
             selectedTopic.style.display = 'block';
-            lastClicked = konu; 
+            lastClicked = konu;
         }
     }
 }

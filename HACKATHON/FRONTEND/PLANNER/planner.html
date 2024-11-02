@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şık Form Tasarımı</title>
+    <link rel="stylesheet" href="planner.css">
+</head>
+<body>
+
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="file:///C:/Users/baris/ROADMAP-AND-PLANER/HACKATHON/FRONTEND/HOME/index.html">
+                    <img src="https://fundamig.org.br/wp-content/uploads/2023/11/Logo_Filiadas_2021_FDC_CMYK.png" alt="logo" class="logo-img">
+                </a>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </div>
+        <div class="dropdown" id="dropdownMenu">
+            <a href="file:///C:/Users/baris/ROADMAP-AND-PLANER/HACKATHON/FRONTEND/HOME/index.html">Ana Sayfa</a>
+            <a href="#">İletişim</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="form-container">
+            <form id="survey-form" action="C:/Users/baris/ROADMAP-AND-PLANER/HACKATHON/FRONTEND/PLANNER/AIPLAN/AIPLAN.html" method="get">
+                <h2>Planlama Formu</h2>
+                
+                <!-- Plan Seçenekleri -->
+                <div class="form-group">
+                    <label>Lütfen yapmak istediğiniz plan seçeneğini seçin:</label>
+                    <div class="plan-options">
+                        <input type="radio" id="gunluk" name="plan" value="gunluk" required>
+                        <label for="gunluk">Günlük</label>
+                        <input type="radio" id="haftalik" name="plan" value="haftalik" required>
+                        <label for="haftalik">Haftalık</label>
+                        <input type="radio" id="aylik" name="plan" value="aylik" required>
+                        <label for="aylik">Aylık</label>
+                    </div>
+                </div>
+                
+                <!-- Form Soruları -->
+                <div class="form-group">
+                    <label for="q1">Adınız:</label>
+                    <input type="text" id="q1" name="q1" placeholder="Adınızı girin" required>
+                </div>
+                <div class="form-group">
+                    <label for="q2">Okul saatlerinizi yazar mısınız?</label>
+                    <textarea id="q2" name="q2" placeholder="Okul saati (Yoksa yok yazın)" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="q3">Uyku saatleriniz:</label>
+                    <textarea id="q3" name="q3" placeholder="Uyku saatlerinizi girin" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="q12">Eklemek istedikleriniz:</label>
+                    <textarea id="q12" name="q12" placeholder="Eklemek istediklerinizi girin" required></textarea>
+                </div>
+                
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="planner.js"></script>
+</body>
+</html>

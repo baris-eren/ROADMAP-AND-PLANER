@@ -9,50 +9,251 @@
 <body>
     <nav>
         <div class="navbar">
-            <div class="logo">Logo</div>
+            <div class="logo">
+                <a href="file:///C:/Users/baris/ROADMAP-AND-PLANER/HACKATHON/FRONTEND/HOME/index.html">
+                    <img src="https://fundamig.org.br/wp-content/uploads/2023/11/Logo_Filiadas_2021_FDC_CMYK.png" alt="logo" class="logo-img">
+                </a>
+            </div>
             <div class="menu-icon" onclick="toggleMenu()">☰</div>
         </div>
         <div class="dropdown" id="dropdownMenu">
-            <a href="#">Ana Sayfa</a>
+            <a href="file:///C:/Users/baris/ROADMAP-AND-PLANER/HACKATHON/FRONTEND/HOME/index.html">Ana Sayfa</a>
             <a href="#">İletişim</a>
         </div>
     </nav>
 
     <div class="roadmap">
-        <div class="subject-box" onclick="toggleTopics('temel_matematik')">Temel Matematik</div>
-        <div class="arrow">↓</div>
-        <div class="subject-box" onclick="toggleTopics('sayisal')">Sayısal Mantık</div>
-        <div class="arrow">↓</div>
-        <div class="subject-box" onclick="toggleTopics('geometri')">Geometri</div>
-        <div class="arrow">↓</div>
-        <div class="subject-box" onclick="toggleTopics('analiz')">Analiz</div>
+        <div class="subject-box" onclick="toggleTopics('fonksiyonlar')">FONKSİYONLAR</div>
+        <div class="arrow">➪</div>
+        
+        <div class="subject-box" onclick="toggleTopics('polinomlar')">POLİNOMLAR</div>
+        <div class="arrow">➪</div>
+        
+        <div class="subject-box" onclick="toggleTopics('denklem')">DENKLEM VE EŞİTSİZLİKLER</div>
+        <div class="arrow">➪</div>
+        
+        <div class="subject-box" onclick="toggleTopics('trigo')">TRİGONOMETRİ</div>
+        <div class="arrow">➪</div>
+        
+        <div class="subject-box" onclick="toggleTopics('sayma_ve_olasilik')">SAYMA VE OLASILIK</div>
+        <div class="arrow1">⮷</div>
+        
+        <div class="subject-box" onclick="toggleTopics('integral')">İNTEGRAL</div>
+        <div class="arrow">🢤</div>
+        
+        <div class="subject-box" onclick="toggleTopics('turev')">TÜREV</div>
+        <div class="arrow">🢤</div>
+        
+        <div class="subject-box" onclick="toggleTopics('limit')">LİMİT</div>
+        <div class="arrow">🢤</div>
+        
+        <div class="subject-box" onclick="toggleTopics('diziler')">DİZİLER</div>
+        <div class="arrow">🢤</div>
+        
+        <div class="subject-box" onclick="toggleTopics('logaritma')">LOGARİTMA</div>
 
-        <div class="next-topics" id="temel_matematik">
-            <div class="subject-box">Kesirler</div>
-            <div class="subject-box">Oran-Orantı</div>
-            <div class="subject-box">Çarpanlara Ayırma</div>
-            <div class="subject-box">Üslü Sayılar</div>
+        <div class="next-topics" id="fonksiyonlar">
+            <div class="next-topics-left">
+                <h1>BU KONUNUN ALT BAŞLIKLARI</h1>
+                <div class="subject-box-left">Fonksiyon Kavramı</div>
+                <div class="subject-box-left">Fonksiyonların Çeşitleri</div>
+                <div class="subject-box-left">Fonksiyonların Gösterimi ve Grafik Yorumlama</div>
+                <div class="subject-box-left">Fonksiyonlarda İşlemler</div>
+                <div class="subject-box-left">Fonksiyonlarda Ters Fonksiyon</div>
+                <div class="subject-box-left">Oran-Orantı</div>
+                <div class="subject-box-left">Fonksiyonların Özellikleri</div>
+                <div class="subject-box-left">Fonksiyonlarda Dönüşümler</div>
+            </div>
+            <div class="line-separator"></div>
+            <div class="next-topics-right">
+                <h1>ÖNCEDEN BİLİNMESİ GEREKEN KONULAR</h1>
+                <div class="subject-box-right">Sayılar ve Sayı Kümeleri</div>
+                <div class="subject-box-right">Kümeler ve Kümeler Arasındaki İlişkiler</div>
+                <div class="subject-box-right">TYT Düzeyinde Denklem Ve Eşitsizlikler</div>
+            </div>
         </div>
 
-        <div class="next-topics" id="sayisal">
-            <div class="subject-box">Kümeler</div>
-            <div class="subject-box">Mantık</div>
-            <div class="subject-box">Fonksiyonlar</div>
-            <div class="subject-box">Eşitsizlikler</div>
+        <div class="next-topics" id="polinomlar">
+            <div class="next-topics-left">
+                <h1>BU KONUNUN ALT BAŞLIKLARI</h1>
+                <div class="subject-box-left">Polinom Kavramı</div>
+                <div class="subject-box-left">Polinomlarda Terim ve Katsayılar</div>
+                <div class="subject-box-right">Polinomların Derecesi</div>
+                <div class="subject-box-right">Polinomlarda İşlemler</div>
+                <div class="subject-box-right">Polinomların Eşitliği</div>
+                <div class="subject-box-right">Polinomlarda Bölme ve Kalan Bulma</div>
+                <div class="subject-box-right">Polinomların Çarpanlara Ayrılması</div>
+                <div class="subject-box-right">Polinomların Grafikleri</div>
+            </div>
+            <div class="line-separator"></div>
+            <div class="next-topics-right">
+                <h1>ÖNCEDEN BİLİNMESİ GEREKEN KONULAR</h1>
+                <div class="subject-box-right">Temel Cebir</div>
+                <div class="subject-box-right">Üslü İfadeler</div>
+                <div class="subject-box-right">Köklü İfadeler</div>
+            </div>x
         </div>
 
-        <div class="next-topics" id="geometri">
-            <div class="subject-box">Dik Üçgen</div>
-            <div class="subject-box">Çember ve Daire</div>
-            <div class="subject-box">Alan ve Hacim</div>
-            <div class="subject-box">Prizmalar ve Silindirler</div>
+        <div class="next-topics" id="denklem">
+            <div class="next-topics-left">
+                <h1>BU KONUNUN ALT BAŞLIKLARI</h1>
+                <div class="subject-box-left">İkinci Dereceden Denklemler ve Kökleri</div>
+                <div class="subject-box-left">Mutlak Değerli Denklem ve Eşitsizlikler</div>
+                <div class="subject-box-left">Üslü ve Köklü Denklemler</div>
+                <div class="subject-box-left">Rasyonel Denklemler ve Eşitsizlikler</div>
+                <div class="subject-box-left">İkinci Dereceden Eşitsizlikler</div>
+                <div class="subject-box-left">Birleşik ve Ayrık Eşitsizlikler</div>
+                <div class="subject-box-left">Mutlak Değerli Eşitsizlikler</div>
+                <div class="subject-box-left">Parametreli Denklem ve Eşitsizlikler</div>
+                <div class="subject-box-left">Denklem ve Eşitsizlik Sistemleri</div>
+            </div>
+            <div class="line-separator"></div> 
+            <div class="next-topics-right">
+                <h1>ÖNCEDEN BİLİNMESİ GEREKEN KONULAR</h1>
+                <div class="subject-box-right">Temel Cebir Bilgisi</div>
+                <div class="subject-box-right">Mutlak Değer</div>
+            </div>
         </div>
 
-        <div class="next-topics" id="analiz">
-            <div class="subject-box">Limit</div>
-            <div class="subject-box">Türev</div>
-            <div class="subject-box">İntegral</div>
-            <div class="subject-box">Diferansiyel Denklemler</div>
+        <div class="next-topics" id="trigo">
+            <div class="next-topics-left">
+                <h1>BU KONUNUN ALT BAŞLIKLARI</h1>
+                <div class="subject-box-left">Trigonometri Temel Kavramlar</div>
+                <div class="subject-box-left">Açı Ölçüleri (Radyan ve Derece)</div>
+                <div class="subject-box-left">Trigonometri Fonksiyonları (Sinüs, Kosinüs, Tanjant ve Kotanjant)</div>
+                <div class="subject-box-left">Trigonometri Fonksiyonlarının Grafikleri</div>
+                <div class="subject-box-left">Özdeşlikler ve Trigonometrik Dönüşümler</div>
+                <div class="subject-box-left">Yarım Açı ve Tam Açı Formülleri</div>
+                <div class="subject-box-left">Toplam ve Fark Formülleri</div>
+                <div class="subject-box-left">Trigonometrik Denklemler</div>
+                <div class="subject-box-left">Ters Trigonometri Fonksiyonlar</div>
+                <div class="subject-box-left">Üçgen Çözümü (Sinüs ve Kosinüs Teoremleri)</div>
+            </div>
+            <div class="line-separator"></div> 
+            <div class="next-topics-right">
+                <h1>ÖNCEDEN BİLİNMESİ GEREKEN KONULAR</h1>
+                <div class="subject-box-right">Temel Geometri</div>
+                <div class="subject-box-right">Radyan ve Derece Ölçüleri</div>
+            </div>
+        </div>
+
+        <div class="next-topics" id="sayma_ve_olasilik">
+            <div class="next-topics-left">
+                <h1>BU KONUNUN ALT BAŞLIKLARI</h1>
+                <div class="subject-box-left">Örnek uzay, olay ve olasılık kavramlar</div>
+                <div class="subject-box-left">Permütasyon</div>
+                <div class="subject-box-left">Kombinasyon</div>
+                <div class="subject-box-left">Olasılık Kuralları</div>
+                <div class="subject-box-left">Binom Açılımı</div>
+                <div class="subject-box-left">Olasılık Dağılımı ve Beklenen Değer</div>
+                <div class="subject-box-left">Pascal Üçgeni ve Binom Katsayıları</div>
+            </div>
+            <div class="line-separator"></div>
+            <div class="next-topics-right">
+                <h1>ÖNCEDEN BİLİNMESİ GEREKEN KONULAR</h1>
+                <div class="subject-box-left">Kümeler ve Kümeler Arasındaki İlişkiler</div>
+            </div>
+        </div>
+
+        <div class="next-topics" id="integral">
+            <div class="next-topics-left">
+                <h1>BU KONUNUN ALT BAŞLIKLARI</h1>
+                <div class="subject-box-left">İntegral Kavramı ve Tanımı</div>
+                <div class="subject-box-left">Belirli ve Belirsiz İntegral</div>
+                <div class="subject-box-left">Temel İntegral Kuralları ve Formülleri</div>
+                <div class="subject-box-left">İntegralde Değişken Değiştirme Yöntemi</div>
+                <div class="subject-box-left">Kısmi İntegrasyon</div>
+                <div class="subject-box-left">Trigonometrik İntegral ve Trigonometrik Dönüşüm</div>
+                <div class="subject-box-left">Alan Hesapları ve Belirli İntegralin Uygulamaları</div>
+                <div class="subject-box-left">Hacim Hesapları (Dönel Cisimler)</div>
+                <div class="subject-box-left">Ortalama Değer Teoremi ve Fiziksel Uygulamalar</div>
+            </div>  
+            <div class="line-separator"></div>
+            <div class="next-topics-right">
+                <h1>ÖNCEDEN BİLİNMESİ GEREKEN KONULAR</h1>
+                <div class="subject-box-left">Üslü ve Trigonometrik İfadeler</div>
+                <div class="subject-box-left">Türev Bilgisi</div>
+            </div>
+        </div>
+
+        <div class="next-topics" id="turev">
+            <div class="next-topics-left">
+                <h1>BU KONUNUN ALT BAŞLIKLARI</h1>
+                <div class="subject-box-left">Türev Kavramı ve Türev Tanımı</div>
+                <div class="subject-box-left">Türev Alma Kuralları ve Temel Türev Formülleri</div>
+                <div class="subject-box-left">Çarpım ve Bölümün Türevi</div>
+                <div class="subject-box-left">Zincir Kuralı</div>
+                <div class="subject-box-left">Trigonometrik Fonksiyonların Türevi</div>
+                <div class="subject-box-left">Ters Fonksiyonların Türevi</div>
+                <div class="subject-box-left">Grafik Üzerinde Türev ve Teğet Doğrusu</div>
+                <div class="subject-box-left">Fonksiyonun Artma-Azalma Durumları ve Maksimum-Minimum Problemleri</div>
+                <div class="subject-box-left">Hız, İvme ve Fiziksel Uygulamalar</div>
+            </div>
+            <div class="line-separator"></div>
+            <div class="next-topics-right">
+                <h1>ÖNCEDEN BİLİNMESİ GEREKEN KONULAR</h1>
+                <div class="subject-box-left">Fonksiyonlar</div>
+                <div class="subject-box-left">Cebirsel İşlemler</div>
+                <div class="subject-box-left">Limit Bilgisi</div>
+            </div>
+        </div>
+
+        <div class="next-topics" id="limit">
+            <div class="next-topics-left">
+                <h1>BU KONUNUN ALT BAŞLIKLARI</h1>
+                <div class="subject-box-left">Limit Kavramı ve Limitin Tanımı</div>
+                <div class="subject-box-left">Sonsuzda ve Sonsuzlukta Limit</div>
+                <div class="subject-box-left">Sağdan ve Soldan Limit</div>
+                <div class="subject-box-left">Limit Kuralları ve Özellikleri</div>
+                <div class="subject-box-left">Belirsiz Durumlar ve Belirsizliklerin Çözümü</div>
+                <div class="subject-box-left">Süreklilik ve Fonksiyonların Süreklilik Koşulları</div>
+            </div>
+            <div class="line-separator"></div>
+            <div class="next-topics-right">
+                <h1>ÖNCEDEN BİLİNMESİ GEREKEN KONULAR</h1>
+                <div class="subject-box-left">Sayı Kümeleri</div>
+                <div class="subject-box-left">Üslü ve Köklü İfadeler</div>
+            </div>
+        </div>
+
+        <div class="next-topics" id="diziler">
+            <div class="next-topics-left">
+                <h1>BU KONUNUN ALT BAŞLIKLARI</h1>
+                <div class="subject-box-left">Dizi Kavramı ve Genel Terim</div>
+                <div class="subject-box-left">Dizilerde Tanım Kümesi ve Sınıflandırma</div>
+                <div class="subject-box-left">Aritmetik Dizi ve Özellikleri</div>
+                <div class="subject-box-left">Geometrik Dizi ve Özellikleri</div>
+                <div class="subject-box-left">Özel Diziler</div>
+                <div class="subject-box-left">Dizilerde Rekürsif Tanım</div>
+                <div class="subject-box-left">Dizinin Limit ve Yakınsaklığı</div>
+                <div class="subject-box-left">Dizinin Grafiği ve Yorumu</div>
+            </div>
+            <div class="line-separator"></div>
+            <div class="next-topics-right">
+                <h1>ÖNCEDEN BİLİNMESİ GEREKEN KONULAR</h1>
+                <div class="subject-box-left">Fonksiyon Kavramı</div>
+                <div class="subject-box-left">Sayı Kümeleri</div>
+            </div>
+        </div>
+
+        <div class="next-topics" id="logaritma">
+            <div class="next-topics-left">
+                <h1>BU KONUNUN ALT BAŞLIKLARI</h1>
+                <div class="subject-box-left">Logaritmanın Tanımı ve Temel Özellikleri</div>
+                <div class="subject-box-left">Logaritma Fonksiyonu ve Grafik Yorumu</div>
+                <div class="subject-box-left">Logaritmanın Üstel Fonksiyonlarla İlişkisi</div>
+                <div class="subject-box-left">Logaritmik İfadelerde İşlemler</div>
+                <div class="subject-box-left">Logaritma Özdeşlikleri</div>
+                <div class="subject-box-left">Taban Değiştirme Kuralı</div>
+                <div class="subject-box-left">Logaritmik Denklemler Ve Eşitsizlikler</div>
+                <div class="subject-box-left">Logaritmik ve Üstel Fonksiyonların Uygulamaları</div>
+            </div>
+            <div class="line-separator"></div>
+            <div class="next-topics-right">
+                <h1>ÖNCEDEN BİLİNMESİ GEREKEN KONULAR</h1>
+                <div class="subject-box-left">Üslü İfadeler</div>
+                <div class="subject-box-left">Sayı Kümeleri ve Sayı Doğrusu</div>
+            </div>
         </div>
     </div>
 
