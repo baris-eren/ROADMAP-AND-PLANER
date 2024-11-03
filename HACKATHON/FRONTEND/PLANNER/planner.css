@@ -1,4 +1,3 @@
-/* Genel Ayarlar */
 body {
     font-family: 'Helvetica Neue', sans-serif;
     background: linear-gradient(135deg, #4B0082 50%, #FFFFFF 50%);
@@ -65,7 +64,6 @@ body {
     margin-bottom: 25px;
 }
 
-/* Plan Seçenekleri */
 .plan-options {
     display: flex;
     justify-content: space-around;
@@ -91,7 +89,6 @@ body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Form Grupları */
 .form-group {
     margin-bottom: 20px;
 }
@@ -113,10 +110,9 @@ body {
     transition: all 0.3s;
 }
 
-/* Textarea Stili */
 .form-group textarea {
-    height: 40px; /* Başlangıçta input boyutunda ayarla */
-    resize: none; /* Kullanıcının boyutlandırmasını engelle */
+    height: 40px; 
+    resize: none; 
 }
 
 .form-group input[type="text"]:focus, .form-group textarea:focus {
@@ -124,7 +120,6 @@ body {
     box-shadow: 0 0 8px rgba(75, 0, 130, 0.2);
 }
 
-/* Gönder Butonu */
 button[type="submit"] {
     width: 100%;
     padding: 12px;
@@ -142,7 +137,6 @@ button[type="submit"]:hover {
     background: #3a006b;
 }
 
-/* Mobil Cihazlar */
 @media (max-width: 600px) {
     .form-container {
         padding: 20px;

@@ -151,32 +151,32 @@ textarea {
     resize: none;
     height: 30px;
     width: 350px;
-    border-radius: 8px; /* Köşeleri yumuşatır */
-    padding: 10px; /* İç boşluk ekleyerek daha estetik görünüm sağlar */
-    border: 1px solid #ccc; /* İnce bir çerçeve ekler */
-    outline: none; /* Tıklanınca etrafında mavi çerçeve oluşmasını engeller */
+    border-radius: 8px;
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    outline: none; 
     margin-top: 10px;
     margin-bottom: 5px;
 }
 
 button#create-button {
-    background-color: #6a0dad; /* Arka plan rengi */
-    color: white; /* Metin rengi */
-    padding: 12px 24px; /* İç boşluk */
-    font-size: 18px; /* Yazı boyutu */
-    border: 3px solid #8a2be2; /* İnce kenarlık */
-    border-radius: 8px; /* Köşeleri yumuşat */
-    cursor: pointer; /* Tıklanabilir işaretçi */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Yumuşak geçiş */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    background-color: #6a0dad; 
+    color: white;
+    padding: 12px 24px; 
+    font-size: 18px; 
+    border: 3px solid #8a2be2; 
+    border-radius: 8px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 button#create-button:hover {
-    background-color: #8a2be2; /* Hover arka plan rengi */
-    border-color: #6a0dad; /* Hoverda kenar rengini değiştirir */
-    transform: translateY(-2px); /* Hoverda yukarı kaldırma efekti */
+    background-color: #8a2be2; 
+    border-color: #6a0dad; 
+    transform: translateY(-2px); 
 }
 
 button#create-button:active {
-    transform: translateY(1px); /* Tıklandığında hafif geri çekme efekti */
+    transform: translateY(1px); 
 }

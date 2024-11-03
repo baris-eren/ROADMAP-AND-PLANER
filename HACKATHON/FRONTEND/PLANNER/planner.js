@@ -3,10 +3,9 @@ function toggleMenu() {
     dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
 }  
 
-      // Textarea boyutunu otomatik ayarlama fonksiyonu
 document.querySelectorAll('textarea').forEach(function (textarea) {
     textarea.addEventListener('input', function () {
-        this.style.height = 'auto'; // Önce yüksekliği sıfırla
-        this.style.height = (this.scrollHeight) + 'px'; // İçerik yüksekliğine göre ayarla
+        this.style.height = 'auto'; 
+        this.style.height = (this.scrollHeight) + 'px'; 
     });
 });

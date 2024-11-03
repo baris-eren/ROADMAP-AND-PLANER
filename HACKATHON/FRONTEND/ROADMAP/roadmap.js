@@ -8,20 +8,18 @@ function toggleMenu() {
 }
 
 document.getElementById("create-button").addEventListener("click", function() {
-    // Kullanıcının girdiği roadmap konusu
+
     const roadmapData = document.getElementById("q2").value;
 
-    // API'ye POST isteği gönderiyoruz
-    fetch("https://api.gemini.com/roadmap", { // Burada gerçek API URL'sini girin
+    fetch("https://api.gemini.com/roadmap", { 
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({ roadmap: roadmapData }) // Kullanıcının roadmap verisini gönderiyoruz
+        body: JSON.stringify({ roadmap: roadmapData }) 
     })
-    .then(response => response.json()) // Yanıtı JSON formatında bekliyoruz
+    .then(response => response.json())
     .then(data => {
-        // Yanıtı ekrana yazdırıyoruz
         document.getElementById("response-container").innerText = "Gemini yanıtı: " + data.response;
     })
     .catch(error => {
